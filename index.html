@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimitar’s portfolio</title>
+    <meta name="description" content="Technical Content Writer at Wolfram Research specializing in AI, programming, and scientific content">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐲</text></svg>" type="image/svg+xml">
+    <link rel="stylesheet" href="dist/styles.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 py-4">
+        <div class="max-w-6xl mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="nav-logo">~</a>
+            <div class="nav-links hidden md:flex items-center space-x-8">
+                <a href="#experience">work experience</a>
+                <a href="#work">writing samples</a>
+                <a href="#contact">contact</a>
+                <div class="h-4 w-px bg-accent opacity-50 mx-4"></div>
+                <a href="cv.pdf" target="_blank">cv</a>
+            </div>
+            <div class="md:hidden">
+                <button class="text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="text-center max-w-4xl mx-auto px-6">
+            <!-- Avatar -->
+            <div class="mb-8">
+                <div class="hero-avatar mx-auto">
+                    <input type="checkbox" id="avatar-toggle" class="avatar-checkbox">
+                    <label for="avatar-toggle" class="avatar-label">
+                        <img src="assets/images/avatar.jpg" alt="Avatar" class="avatar-img">
+                    </label>
+                </div>
+            </div>
+
+            <!-- Greeting -->
+            <h2 class="hero-greeting">
+                Hi, I am <span class="name">Dimitar</span>
+            </h2>
+
+            <!-- Dynamic Typing Text -->
+            <div class="hero-typing">
+                I like <span id="typing-text" class="typing-text"></span>
+            </div>
+
+            <!-- Brief Description -->
+            <p class="hero-description">
+                I work as a <span class="role">Technical Content Writer</span> at Wolfram Research,
+                where I create clear, engaging content that brings technical concepts to a general audience.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#work" class="btn btn-primary">
+                    View my work
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    Get in touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="section-title">
+                <h2>Work Experience</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Wolfram Research -->
+                <div class="card fade-in-up">
+                    <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6">
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-2">Technical Content Writer</h3>
+                            <p class="text-accent text-lg mb-2 font-medium">Wolfram Research Europe</p>
+                            <p class="text-white">Full-time • Oxford, UK</p>
+                        </div>
+                        <div class="text-white font-mono mt-4 lg:mt-0 lg:text-right">
+                            2024.01 → present
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <p class="text-white leading-relaxed mb-4">
+                            In charge of producing various types of technical content, ranging from simple promotional posts and webpages to long-form
+                            articles, white papers, and training courses on the use of Wolfram Language.
+                        </p>
+
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <h4 class="font-semibold mb-3 text-accent">Responsibilities</h4>
+                                <ul class="space-y-2 text-white text-sm">
+                                    <li class="flex items-start">
+                                        <span class="text-accent mr-2 font-mono">></span>
+                                        Author long-form articles for external publications
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-accent mr-2 font-mono">></span>
+                                        Create customer case studies and white papers
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-accent mr-2 font-mono">></span>
+                                        Write and deliver online webinars and training
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-accent mr-2 font-mono">></span>
+                                        Create new product webpages
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-3 text-accent">Achievements</h4>
+                                <ul class="space-y-2 text-white text-sm">
+                                    <li class="flex items-start">
+                                        <span class="text-accent mr-2 font-mono">></span>
+                                        Published two articles in Wilmott magazine on AI in Finance
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-accent mr-2 font-mono">></span>
+                                        Extended the company’s catalog of customer case studies
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-accent mr-2 font-mono">></span>
+                                        Wrote and delivered several new webinars on Wolfram Language
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-accent mr-2 font-mono">></span>
+                                        Authored Wolfram’s AI vision webpage
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!-- KVH Media Group -->
+                <div class="card fade-in-up">
+                    <div class="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6">
+                        <div>
+                            <h3 class="text-2xl font-semibold mb-2">Specialist Editor</h3>
+                            <p class="text-accent text-lg mb-2 font-medium">KVH Media Group</p>
+                            <p class="text-white">Weekends • Liverpool, UK / Remote</p>
+                        </div>
+                        <div class="text-white font-mono mt-4 lg:mt-0 lg:text-right">
+                            2018.01 → present
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <p class="text-white leading-relaxed mb-4">
+                            Responsible for producing four-page daily newspaper editions distributed in digital and physical formats
+                            to hotels and maritime vessels. Managing multilingual content and maintaining editorial consistency.
+                        </p>
+
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <h4 class="font-semibold mb-3 text-accent">Responsibilities</h4>
+                                <ul class="space-y-2 text-white text-sm">
+                                    <li class="flex items-start">
+                                        <span class="text-accent mr-2 font-mono">></span>
+                                        Source and curate daily news content
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-accent mr-2 font-mono">></span>
+                                        Copy edit articles for format and tone consistency
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-accent mr-2 font-mono">></span>
+                                        Manage editions in English, French, and Bulgarian
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-accent mr-2 font-mono">></span>
+                                        Maintain adherence to in-house style guidelines
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold mb-3 text-accent">Achievements</h4>
+                                <ul class="space-y-2 text-white text-sm">
+                                    <li class="flex items-start">
+                                        <span class="text-accent mr-2 font-mono">></span>
+                                        Maintained 7+ years of consistent editorial quality
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-accent mr-2 font-mono">></span>
+                                        Developed tools to automate repetitive, manual workflows
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-accent mr-2 font-mono">></span>
+                                        Delivered daily publications with 100% reliability
+                                    </li>
+                                    <li class="flex items-start">
+                                        <span class="text-accent mr-2 font-mono">></span>
+                                        Adapted to both digital and print distribution formats
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work Samples Section -->
+    <section id="work" class="section section-bg-secondary">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="section-title">
+                <h2>Featured Work</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <!-- Filter Controls and Work Grid Container -->
+            <div class="work-section">
+                <input type="radio" id="filter-all" name="work-filter" value="all" checked>
+                <input type="radio" id="filter-webpages" name="work-filter" value="webpages">
+                <input type="radio" id="filter-courses" name="work-filter" value="courses">
+                <input type="radio" id="filter-programming" name="work-filter" value="programming">
+                <input type="radio" id="filter-articles" name="work-filter" value="articles">
+                <input type="radio" id="filter-case-studies" name="work-filter" value="case-studies">
+
+                <div class="work-layout">
+                    <div class="tree-nav">
+                        <div class="tree-root">
+                            <label for="filter-all" class="tree-item root">all</label>
+                            <div class="tree-children">
+                                <label for="filter-courses" class="tree-item child">courses</label>
+                                <label for="filter-webpages" class="tree-item child">webpages</label>
+                                <label for="filter-programming" class="tree-item child">programming</label>
+                                <label for="filter-articles" class="tree-item child">articles</label>
+                                <label for="filter-case-studies" class="tree-item child">case studies</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="work-grid">
+                <!-- Course Work -->
+                <div class="work-item" data-category="courses">
+                    <h3 class="text-xl font-semibold">Web Scraping with Wolfram Language</h3>
+                    <p class="text-white text-sm">
+                        Covers web scraping techniques, from simple GET requests to automating web browsers.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-muted">course/author</span>
+                        <a href="https://www.youtube.com/watch?v=t3DkRzEcXTQ" class="work-link">watch →</a>
+                    </div>
+                </div>
+
+                <!-- Web Content Work -->
+                <div class="work-item" data-category="webpages">
+                    <h3 class="text-xl font-semibold">The Wolfram Way: Hybrid AI</h3>
+                    <p class="text-white text-sm">
+                        Wolfram’s flagship AI page, summarizing everything the company does in the field.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-muted">webpage/main-author</span>
+                        <a href="#" class="work-link">view →</a>
+                    </div>
+                </div>
+
+                <!-- Programming Work -->
+                <div class="work-item" data-category="programming">
+                    <h3 class="text-xl font-semibold">leaves</h3>
+                    <p class="text-white text-sm">
+                        A terminal-based poetry reader supporting multiple languages and layouts.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-muted">programming/rust</span>
+                        <a href="#" class="work-link">github →</a>
+                    </div>
+                </div>
+
+                <!-- Article Work -->
+                <div class="work-item" data-category="articles">
+                    <h3 class="text-xl font-semibold">Symbolic AI Approaches</h3>
+                    <p class="text-white text-sm">
+                        Exploring how context-free grammar powered early AI solutions like <a href="https://www.wolframalpha.com/">Wolfram|Alpha</a>, and how they are still used in finance.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-muted">article</span>
+                        <a href="https://wilmott.com/wilmott-magazine-january-2025-issue/" class="work-link">read →</a>
+                    </div>
+                </div>
+
+                <div class="work-item" data-category="articles">
+                    <h3 class="text-xl font-semibold">AI For Financial Decision Making</h3>
+                    <p class="text-white text-sm">
+                        Exploring ways of making AI more trustworthy so it can be used reliably in financial decision making, with examples.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-muted">article</span>
+                        <a href="https://wilmott.com/wilmott-magazine-july-2025-issue/" class="work-link">read →</a>
+                    </div>
+                </div>
+
+                <!-- Case Study Work -->
+                <div class="work-item" data-category="case-studies">
+                    <h3 class="text-xl font-semibold">Building Trustworthy AI: The LabV Story</h3>
+                    <p class="text-white text-sm">
+                        Material science platform company partnering with Wolfram to build reliable AI assistants for their clients.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-muted">case_study</span>
+                        <a href="https://www.wolfram.com/customer-stories/labv-story.pdf" class="work-link">read →</a>
+                    </div>
+                </div>
+
+                <div class="work-item" data-category="case-studies">
+                    <h3 class="text-xl font-semibold">Neural Networks and Electric Trucks</h3>
+                    <p class="text-white text-sm">
+                        Wolfram trained a neural network to help an automotive company optimize the thermal performance of their vehicles.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-muted">case_study</span>
+                        <a href="https://www.wolfram.com/customer-stories/Wolfram-Technologies-Optimizing-Thermal-Performance-Electric-Trucks-Neural-Networks.pdf" class="work-link">read →</a>
+                    </div>
+                </div>
+
+                <div class="work-item" data-category="case-studies">
+                    <h3 class="text-xl font-semibold">Optimizing Cold Chain Logistics</h3>
+                    <p class="text-white text-sm">
+                        A logistics company used Wolfram to model and simulate the effects of packaging and ambient factors during shipping.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-muted">case_study</span>
+                        <a href="https://www.wolfram.com/customer-stories/Wolfram-Technologies-Optimizing-Thermal-Performance-Electric-Trucks-Neural-Networks.pdf" class="work-link">read →</a>
+                    </div>
+                </div>
+
+                <!-- More Web Content -->
+                <div class="work-item" data-category="webpages">
+                    <h3 class="text-xl font-semibold">Wolfram Solution for Biosciences</h3>
+                    <p class="text-white text-sm">
+                        Explains the presence and capabilities of the Wolfram tech stack for bioscience research.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-muted">webpage/co-author</span>
+                        <a href="#" class="work-link">view →</a>
+                    </div>
+                    </div>
+
+                    <!-- Social Sciences Webpage -->
+                    <div class="work-item" data-category="webpages">
+                        <h3 class="text-xl font-semibold">Wolfram Solution for Social Sciences</h3>
+                        <p class="text-white text-sm">
+                            Explains the presence and capabilities of the Wolfram tech stack for social science research.
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs font-mono text-muted">webpage/main-author</span>
+                            <span class="text-xs text-muted opacity-60">coming soon</span>
+                        </div>
+                </div>
+
+                <!-- Combining Wolfram Language and R -->
+                <div class="work-item" data-category="courses">
+                    <h3 class="text-xl font-semibold">Combining Wolfram Language and R</h3>
+                    <p class="text-white text-sm">
+                        Using the R interpreter from within Wolfram Mathematica, combining the strengths of both languages.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-muted">course/author</span>
+                        <a href="https://www.youtube.com/watch?v=vFmn10sZNQE" class="work-link">watch →</a>
+                    </div>
+                </div>
+
+                <!-- Creating Custom AI Chat Personas -->
+                <div class="work-item" data-category="courses">
+                    <h3 class="text-xl font-semibold">Creating Custom AI Chat Personas</h3>
+                    <p class="text-white text-sm">
+                        Developing personas and equipping them with computational tools for more reliability.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-muted">course/author</span>
+                        <a href="https://www.youtube.com/watch?v=mY9wWeqxuOs" class="work-link">watch →</a>
+                    </div>
+                </div>
+
+                <!-- kkameokda Flashcard TUI -->
+                <div class="work-item" data-category="programming">
+                    <h3 class="text-xl font-semibold">kkameokda</h3>
+                    <p class="text-white text-sm">
+                        Terminal-based flashcard/spaced repetition app.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-muted">programming/rust</span>
+                        <a href="https://github.com/bbkingisking/kkameokda" class="work-link">github →</a>
+                    </div>
+                </div>
+
+                <!-- Liverpool FC News Scraper -->
+                <div class="work-item" data-category="programming">
+                    <h3 class="text-xl font-semibold">lfc</h3>
+                    <p class="text-white text-sm">
+                        Deliver daily AI-summarized news around Liverpool FC via email and Telegram.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-muted">programming/rust</span>
+                        <a href="https://crates.io/crates/lfc" class="work-link">crates.io →</a>
+                    </div>
+                </div>
+
+                <!-- MPV Lyrics Sync -->
+                <div class="work-item" data-category="programming">
+                    <h3 class="text-xl font-semibold">sync_lyrics</h3>
+                    <p class="text-white text-sm">
+                        <a href="https://mpv.io/">mpv</a> script for creating synchronized lyrics from plain text files.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-muted">programming/lua</span>
+                        <a href="https://github.com/bbkingisking/sync_lyrics" class="work-link">github →</a>
+                    </div>
+                </div>
+
+                <!-- Plex Discord Status -->
+                <div class="work-item" data-category="programming">
+                    <h3 class="text-xl font-semibold">plex-discord-status-update</h3>
+                    <p class="text-white text-sm">
+                        Flask application that syncs Plex media playback with Discord custom status.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-muted">programming/python</span>
+                        <a href="https://github.com/bbkingisking/plex-discord-status-update" class="work-link">github →</a>
+                    </div>
+                </div>
+
+                <!-- Shake - Shakespeare Sonnets -->
+                <div class="work-item" data-category="programming">
+                    <h3 class="text-xl font-semibold">shake</h3>
+                    <p class="text-white text-sm">
+                        macOS menu bar application that displays a random Shakespeare sonnet every day.
+                    </p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-xs font-mono text-muted">programming/swift</span>
+                        <a href="https://github.com/bbkingisking/shake" class="work-link">github →</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="section-title">
+                <h2>Contact</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="contact-item">
+                    <a href="mailto:cre10baen@icloud.com" class="contact-icon">
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </a>
+                    <h3 class="font-semibold mb-2">Email</h3>
+                    <a href="mailto:cre10baen@icloud.com" class="contact-link font-mono text-sm">
+                        cre10baen@icloud.com
+                    </a>
+                </div>
+
+                <div class="contact-item">
+                    <a href="https://www.linkedin.com/in/dimitar-krastev-a8a6b5356/" class="contact-icon">
+                        <svg fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                    <h3 class="font-semibold mb-2">LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/dimitar-krastev-a8a6b5356/" class="contact-link font-mono text-sm">
+                        /in/dimitar-krastev
+                    </a>
+                </div>
+
+                <div class="contact-item">
+                    <a href="https://github.com/bbkingisking" class="contact-icon">
+                        <svg fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <h3 class="font-semibold mb-2">GitHub</h3>
+                    <a href="https://github.com/bbkingisking" class="contact-link font-mono text-sm">
+                        /bbkingisking
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8">
+        <div class="text-center">
+            <p class="text-gray-400 text-sm">Made with love (and Tailwind)</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Typing animation for hero section
+        const phrases = [
+            "technical writing",
+            "programming",
+            "reading fiction",
+            "watching sports",
+            "creative writing",
+            "the blues"
+        ];
+
+        let currentPhrase = 0;
+        let currentChar = 0;
+        let isDeleting = false;
+        const typingElement = document.getElementById('typing-text');
+        const typingSpeed = 100;
+        const deletingSpeed = 50;
+        const pauseTime = 2000;
+
+        function typeEffect() {
+            const phrase = phrases[currentPhrase];
+
+            if (!isDeleting) {
+                typingElement.textContent = phrase.substring(0, currentChar + 1);
+                currentChar++;
+
+                if (currentChar === phrase.length) {
+                    setTimeout(() => {
+                        isDeleting = true;
+                        typeEffect();
+                    }, pauseTime);
+                    return;
+                }
+            } else {
+                typingElement.textContent = phrase.substring(0, currentChar);
+                currentChar--;
+
+                if (currentChar === 0) {
+                    isDeleting = false;
+                    currentPhrase = (currentPhrase + 1) % phrases.length;
+                }
+            }
+
+            const speed = isDeleting ? deletingSpeed : typingSpeed;
+            setTimeout(typeEffect, speed);
+        }
+
+        // Start typing animation
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(typeEffect, 1000);
+        });
+
+        // No JavaScript needed for filtering - handled by pure CSS!
+
+        // Smart logo navigation
+        const logo = document.querySelector('.nav-logo');
+        if (logo) {
+            logo.addEventListener('click', function(e) {
+                e.preventDefault();
+                const currentPath = window.location.pathname;
+                const currentPage = currentPath === '/' || currentPath.endsWith('/index.html') || currentPath === '';
+
+                if (currentPage) {
+                    // Already on the page, scroll to hero
+                    const heroSection = document.getElementById('hero');
+                    if (heroSection) {
+                        heroSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                } else {
+                    // Navigate to home page
+                    window.location.href = '/';
+                }
+            });
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add scroll-based animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-up');
+                }
+            });
+        }, observerOptions);
+
+        // Observe sections for animations
+        document.querySelectorAll('.fade-in-up').forEach(element => {
+            observer.observe(element);
+        });
+
+
+    </script>
+</body>
+</html>
