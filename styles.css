@@ -865,7 +865,8 @@ nav {
 .contact-icon {
     width: 4rem;
     height: 4rem;
-    background: rgba(0, 255, 136, 0.1);
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-primary);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -875,7 +876,8 @@ nav {
 }
 
 .contact-item:hover .contact-icon {
-    background: rgba(0, 255, 136, 0.2);
+    background: var(--accent-primary);
+    border-color: var(--accent-primary);
     transform: scale(1.1);
 }
 
@@ -883,6 +885,11 @@ nav {
     width: 1.5rem;
     height: 1.5rem;
     color: var(--accent-primary);
+    transition: color 0.3s ease;
+}
+
+.contact-item:hover .contact-icon svg {
+    color: var(--bg-primary);
 }
 
 .contact-link {
