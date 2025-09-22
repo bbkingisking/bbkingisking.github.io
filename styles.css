@@ -309,7 +309,6 @@ nav {
     background: var(--accent-primary);
     color: var(--bg-primary);
     transform: translateY(-1px);
-    box-shadow: 0 8px 25px rgba(0, 255, 136, 0.1);
 }
 
 /* Sections */
