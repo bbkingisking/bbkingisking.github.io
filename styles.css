@@ -297,7 +297,6 @@ nav {
     background: var(--accent-secondary);
     border-color: var(--accent-secondary);
     transform: translateY(-1px);
-    box-shadow: 0 8px 25px rgba(0, 255, 136, 0.2);
 }
 
 .btn-secondary {
