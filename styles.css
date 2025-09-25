@@ -1165,3 +1165,48 @@ pre code {
     font-family: var(--mono-font);
     font-weight: 600;
 }
+
+/* Mobile menu link styles */
+#mobile-menu a {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    color: var(--text-secondary);
+}
+
+#mobile-menu .space-y-4 > * {
+    display: block;
+    width: 100%;
+}
+
+#mobile-menu .space-y-4 > a {
+    display: block;
+    width: fit-content;
+}
+
+#mobile-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--accent-primary);
+    transition: width 0.3s ease;
+}
+
+#mobile-menu a:hover::after {
+    width: 100%;
+}
+
+/* Fix scroll offset for fixed navbar */
+#experience, #work, #contact {
+    scroll-margin-top: 60px;
+}
+
+@media (min-width: 768px) {
+    #experience, #work, #contact {
+        scroll-margin-top: 0;
+    }
+}
